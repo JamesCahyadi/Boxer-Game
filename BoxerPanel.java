@@ -61,7 +61,6 @@ public class BoxerPanel extends JPanel {
 					|| o.hitPlayerTopRight(p1.playerX, p1.playerY, p1.PLAYER_WIDTH)
 					|| o.hitPlayerBottomLeft(p1.playerX, p1.playerY, p1.PLAYER_HEIGHT)
 					|| o.hitPlayerBottomRight(p1.playerX, p1.playerY, p1.PLAYER_WIDTH, p1.PLAYER_HEIGHT)) {
-				System.out.println(p1.playerMidpointX + " " + o.obstacleMidpointX);
 				if(p1.playerMidpointX < o.obstacleMidpointX) {
 					p1.knockBackLeft = true;
 				} else {
